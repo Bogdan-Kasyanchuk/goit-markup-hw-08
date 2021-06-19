@@ -1,0 +1,19 @@
+.hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--footer-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/bgi-header.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+}
