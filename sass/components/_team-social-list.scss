@@ -1,9 +1,13 @@
 .team-social-list {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.team-social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-social-list__link {
@@ -23,5 +27,12 @@
     background-color: var(--primary-accent-color);
     fill: var(--secondary-accent-color);
     transform: scale(1.1);
+  }
+}
+
+// 1200+
+@media screen and (min-width: $desktop) {
+  .team-social-list {
+    padding-bottom: 30px;
   }
 }
