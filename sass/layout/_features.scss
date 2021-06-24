@@ -19,7 +19,7 @@
 
 .features-list__title {
   margin-bottom: 10px;
-  @include font($fw: 700);
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text-color);

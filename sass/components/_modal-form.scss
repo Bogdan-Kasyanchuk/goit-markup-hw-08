@@ -1,12 +1,15 @@
 .form-label {
   display: block;
-  margin-bottom: 10px;
   @include font($fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: var(--primary-text-color);
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.modal-form__form-label {
+  margin-bottom: 10px;
 }
 
 .form-label__input {
@@ -52,11 +55,14 @@
   }
 }
 
+.modal-form__form-label-textarea {
+  margin-bottom: 20px;
+}
+
 .form-label__comment {
   width: 100%;
   height: 120px;
   margin-top: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -98,15 +104,16 @@
 
 .form-policy {
   display: block;
-  margin-bottom: 30px;
-  padding-left: 11px;
-  padding-right: 11px;
-  line-height: 1.71;
+  @include font($fs: 12px, $lh: 1.17);
   color: var(--primary-text-color);
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.modal-form__form-policy {
+  margin-bottom: 30px;
 }
 
 .form-policy__icon {
@@ -146,4 +153,13 @@
 .modal-form__button {
   display: block;
   margin: 0 auto;
+}
+
+// 1200+
+@media screen and (min-width: $desktop) {
+  .form-policy {
+  padding-left: 11px;
+  padding-right: 11px;
+   @include font($fs: 14px, $lh: 1.71);
+  }
 }

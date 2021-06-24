@@ -4,8 +4,10 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  padding: 60px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  overflow-y: scroll;
   transition-property: opacity, visibility;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);

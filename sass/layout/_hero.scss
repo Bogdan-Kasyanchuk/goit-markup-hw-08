@@ -4,8 +4,6 @@
   background-color: var(--footer-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/mobile/mobile-bgi-header.jpg');
-  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   -webkit-image-set(url('../images/hero/mobile/mobile-bgi-header.webp'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,8 +24,6 @@
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/mobile/mobile-bgi-header@2x.jpg');
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   -webkit-image-set(url('../images/hero/mobile/mobile-bgi-header@2x.webp'));
   }
 }
 
@@ -36,8 +32,6 @@
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/tablet/tablet-bgi-header.jpg');
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   -webkit-image-set(url('../images/hero/tablet/tablet-bgi-header.webp'));
   }
 }
 
@@ -48,8 +42,6 @@
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/tablet/tablet-bgi-header@2x.jpg');
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   -webkit-image-set(url('../images/hero/tablet/tablet-bgi-header@2x.webp'));
   }
 }
 
@@ -62,8 +54,6 @@
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/desktop/desktop-bgi-header.jpg');
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   -webkit-image-set(url('../images/hero/desktop/desktop-bgi-header.webp'));
   }
 
   .hero__title {
@@ -73,12 +63,10 @@
 
 // 2x, 1200px+
 @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
-  (min-resolution: 192dpi) and (min-width: $tablet),
-  (min-resolution: 2dppx) and (min-width: $tablet) {
+  (min-resolution: 192dpi) and (min-width: $desktop),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/desktop/desktop-bgi-header@2x.jpg');
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   -webkit-image-set(url('../images/hero/desktop/desktop-bgi-header@2x.webp'));
   }
 }

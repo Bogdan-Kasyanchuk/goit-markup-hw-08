@@ -1,8 +1,7 @@
 .portfolio-card__item {
-  position: relative;
-  flex-basis: calc((100% - 90px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-card__link {
@@ -67,4 +66,32 @@
 .portfolio-card__type {
   @include font($fs: 16px, $lh: 1.87);
   color: var(--primary-text-color);
+}
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .portfolio-card__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    &:nth-child(1) .portfolio-card__description {
+      padding-bottom: 56px;
+    }
+  }
+}
+
+// 1200+
+@media screen and (min-width: $desktop) {
+  .portfolio-card__item {
+    flex-basis: calc((100% - 90px) / 3);
+
+    &:nth-child(1) .portfolio-card__description {
+      padding-bottom: 20px;
+    }
+  }
 }
